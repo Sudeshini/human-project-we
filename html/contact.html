@@ -5,35 +5,61 @@
          
         <link rel="stylesheet" href="../css/bootstrap.css"/>
         <link rel="stylesheet" href="../css/custom.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <script>
+        $(document).ready(function() {
+          $("#human-nav-bar").load("partials/navbar.html");
+        });
+        
+        </script>
 
     </head>
     <body>
             <header>
-                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                        <a class="navbar-brand" href="#">Navbar</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse human-nav-bar" id="navbarNav">
-                          <ul class="navbar-nav">
+              <div id="human-nav-bar"></div>
+                    
+              </header>
+
+              <div class="container">
+                <div class="container text-left human-contact-container">
+                  <h1 class="contactus">Contact Us</h1>
+                  <div class="row">
+                    <div class="col-6">
+                      
+                      <h2 class="questions">Got some questions?</h2>
+                      <h5 class="drop">Drop us a line.</h4>
+                     
+                        <form>
+                          <div class="form-group">
+                            <label for="exampleInputname">Name</label>
+                            <input type="name" class="form-control" id="exampleInputname" aria-describedby="yourname">
                             
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
-                              </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Pricing</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Contact us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Sign up</a>
-                              </li>
-                            
-                          </ul>
+                          </div>
+                        <div class="form-group">
+                          <label for="exampleInputE">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          
                         </div>
-                      </nav>
-                </header>
+                        <div class="form-group">
+                          <label for="exampleInputmessage">Message</label>
+                          <input type="message" class="form-control" id="exampleInputmessage">
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                  
+                </div>
+                <div class="col-6">
+                  <div class="card" >
+                  <img src="img/rabbit-3660673_1920.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                      <h3 class="card-text">We know it's hard to be human.</h3>
+                      <p class="card-text">Let us help!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
          </body> 
          <footer class="text-center bg-dark fixed-bottom human-footer">&copy All Rights Reserved. <i>The Human Project</i> 2019</footer>
 </html>      
