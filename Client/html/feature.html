@@ -40,7 +40,7 @@
 
 
                          </p>
-                         <form>
+                         <form id="featureFrm" class="human-feature-form" > 
                                 <div class="form-group">
                                   <label for="exampleFormControlInput1">Your Name</label>
                                   <input type="texr" class="form-control" placeholder="your name">
@@ -52,12 +52,20 @@
                                    
                                   </select>
                                 </div><br>
-                                <button type="button" class="btn btn-primary">Primary</button>
-                                
+
                                 
 
+                                
+                                <button id="featuresubmitbtn" type="button" class="btn btn-primary">Submit</button>
+                                </form>
+                                <div id="featureloadingdiv" class="human-removed">
+                                  <img src="/assets/spinner.gif"/>
+                                  <p><i>sending data to server..</i></p>
+                                </div>
+                                
                     </div>
-
+                    
+                    
                     
                     <div class="col-6">
                         <h5 class="card-header">Their Suggestion</h5>
@@ -77,8 +85,7 @@
                                     <li class="list-group-item">Morbi leo risus</li>
                                     
                                   </ul>
-                             
-                            </div>
+                                 
                           </div>
 
                     </div>
@@ -105,7 +112,9 @@
 
         </main>
         <div id="human-footer-bar"></div>
+        <div id="human-footer-bar"></div>
     </body>
+    <script src="/js/feature.js"></script>
 
-    <div id="human-footer-bar"></div>
+    
 </html>

@@ -19,3 +19,7 @@ color: white;
     color: brown;
      font-size: 70px;
 }
+/*commoncss*/
+.human-removed{
+    display: none;
+}
