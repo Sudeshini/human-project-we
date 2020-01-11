@@ -5,13 +5,15 @@
     <title>The Human Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="css/bootstrap.css" />~
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         
         <script>
         $(document).ready(function() {
-          $("#human-nav-bar").load("html/partials/navbar.html");
+          $("#human-nav-bar").load("/html/partials/navbar.html", function(){
+        });
+        $("#human-footer-bar").load("/html/partials/footer.html");
         });
         
         </script>
@@ -39,8 +41,10 @@
         <button type="button" class="btn btn-secondary btn-lg">Large button</button>
         </div>
         </main>
+
+        <div id="human-footer-bar"></div>
       
-    <footer class="text-center bg-dark fixed-bottom human-footer">&copy All Rights Reserved. <i>The Human Project</i> 2019</footer>
+    
 </body>
 
 </html>

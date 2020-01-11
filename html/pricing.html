@@ -9,7 +9,9 @@
         
         <script>
         $(document).ready(function() {
-          $("#human-nav-bar").load("partials/navbar.html");
+          $("#human-nav-bar").load("/html/partials/navbar.html", function(){
+        });
+        $("#human-footer-bar").load("/html/partials/footer.html");
         });
         
         </script>
@@ -21,9 +23,44 @@
                     
               </header>
 
+         <div class="text-center">
+          <h3 class="display-4">Feature</h1>
+          <div class="container">
+              <div class ="row">
+                  <div class="col-6">
+                       <h5 class="font-weight-normal">Your suggestion</h5>
+                       <p class="lead">
+                           we want to hear what you want
+                           from us to be more Human!
+
+
+
+                       </p>
+                       <form>
+                        <div class="form-group">
+                          <label for="exampleInputname">Name</label>
+                          <input type="name" class="form-control" id="exampleInputname" aria-describedby="yourname">
+                          
+                        </div>
+                      <div class="form-group">
+                        <label for="exampleInputE">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        
+                      </div>
+
+                      <div class="form-group">
+                        <label for="exampleInputE">Password</label>
+                        <input type="password" class="form-control" id="exampleInputpassword" aria-describedby="password">
+                        
+                      </div>
+                      
+                      
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+
     </head>
     <body>
             
          </body> 
-         <footer class="text-center bg-dark fixed-bottom human-footer">&copy All Rights Reserved. <i>The Human Project</i> 2019</footer>
+         <div id="human-footer-bar"></div>
 </html>      
